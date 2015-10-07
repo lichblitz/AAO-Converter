@@ -4,6 +4,7 @@ package com.lichblitz.aaoconverter.domain;
  * Created by lichblitz on 6/10/15.
  *
  * This class represents a currency from the result of the json response
+ * and it will be added to the recc
  */
 public class ResultCurrency {
 

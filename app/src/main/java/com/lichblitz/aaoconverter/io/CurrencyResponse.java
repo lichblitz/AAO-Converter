@@ -6,6 +6,8 @@ import java.util.HashMap;
 
 /**
  * Created by lichblitz on 6/10/15.
+ * Response from the api that is parsed into a Hashmap automaticly by Gson.
+ *
  */
 public class CurrencyResponse {
 

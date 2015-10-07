@@ -40,8 +40,7 @@ public class ResultAdapter extends RecyclerView.Adapter<ResultViewHolder>{
     public void onBindViewHolder(ResultViewHolder holder, int position) {
 
         ResultCurrency resultCurrency = currencyList.get(position);
-        Log.d("RESULT",currencyList.get(position).getName());
-        holder.setData(resultCurrency.getName(), String.valueOf(resultCurrency.getValue()), input);
+        holder.setData(resultCurrency.getName(), resultCurrency.getValue(), input);
     }
 
     @Override
@@ -49,7 +48,13 @@ public class ResultAdapter extends RecyclerView.Adapter<ResultViewHolder>{
         return currencyList.size();
     }
 
+    /**
+     * Adds the items from the Hashmap of currency obtained from the fixer.io api call.
+     * @param currencyResponse
+     * @param input
+     */
     public void addAll(HashMap<String, String> currencyResponse, String input) {
+
         this.input = Integer.valueOf(input);
         currencyList.add(new ResultCurrency("BRL",Double.valueOf(currencyResponse.get(JsonKeys.BRL))));
         currencyList.add(new ResultCurrency("EUR",Double.valueOf(currencyResponse.get(JsonKeys.EUR))));

@@ -9,6 +9,8 @@ import com.lichblitz.aaoconverter.R;
 import com.lichblitz.aaoconverter.app.AppConverter;
 import com.lichblitz.aaoconverter.io.JsonKeys;
 
+import java.math.BigDecimal;
+
 /**
  * Created by lichblitz on 6/10/15.
  */
@@ -31,9 +33,9 @@ public class ResultViewHolder extends RecyclerView.ViewHolder{
      * Adds the data to the item view
      * @param currencyName
      * @param value
-     * @param input: the value to be converted
+     * @param input : the value to be converted
      */
-    public void setData(String currencyName, String value, Integer input){
+    public void setData(String currencyName, double value, Integer input){
         switch (currencyName){
             case JsonKeys.BRL:
                 setDrawable(R.drawable.icon_brl);
@@ -61,10 +63,10 @@ public class ResultViewHolder extends RecyclerView.ViewHolder{
     }
 
 
-    private void setCurrencyConverted(String value, Integer input){
-        //round the number into two decimals
-        double result = (double)Math.round((Double.valueOf(value)*input) * 100d) / 100d;
-        mCurrencyConvertValue.setText(String.valueOf(result));
+    private void setCurrencyConverted(double value, Integer input){
+        //removing exponential
+        String result = new BigDecimal(String.format("%f",value*input)).stripTrailingZeros().toPlainString();
+        mCurrencyConvertValue.setText(result);
     }
 
     private void setDrawable(@DrawableRes int drawable){

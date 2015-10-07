@@ -15,5 +15,7 @@
     <string name="brl">Brazil Reais</string>
     <string name="no_text_message">Write your dollars.</string>
     <string name="api_error_message">An error ocurred while connecting to the server. Try later.</string>
+    <string name="char_description">Current equivalence between currencies compared to USD.</string>
+    <string name="chart_data_label">Values of currencies.</string>
 
 </resources>

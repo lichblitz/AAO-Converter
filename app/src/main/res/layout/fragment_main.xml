@@ -5,11 +5,17 @@
 
     <include layout="@layout/content_input"/>
 
+    <com.github.mikephil.charting.charts.BarChart
+        android:visibility="gone"
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+    </com.github.mikephil.charting.charts.BarChart>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/result_list"
         android:padding="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-
 
 </LinearLayout>
