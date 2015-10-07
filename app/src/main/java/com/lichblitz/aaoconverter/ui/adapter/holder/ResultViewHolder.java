@@ -31,7 +31,7 @@ public class ResultViewHolder extends RecyclerView.ViewHolder{
      * Adds the data to the item view
      * @param currencyName
      * @param value
-     * @param input
+     * @param input: the value to be converted
      */
     public void setData(String currencyName, String value, Integer input){
         switch (currencyName){

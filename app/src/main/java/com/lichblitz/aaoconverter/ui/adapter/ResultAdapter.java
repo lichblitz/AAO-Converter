@@ -59,4 +59,12 @@ public class ResultAdapter extends RecyclerView.Adapter<ResultViewHolder>{
         notifyItemRangeInserted(getItemCount() - 1, currencyList.size());
 
     }
+
+    /**
+     * Removes all the data from the adapter
+     */
+    public void resetData() {
+        currencyList.clear();
+        notifyDataSetChanged();
+    }
 }

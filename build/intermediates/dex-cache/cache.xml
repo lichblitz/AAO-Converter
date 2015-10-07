@@ -2,18 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/home/lichblitz/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.9.0/a681c044244d9fc375198588297a39ba78028423/retrofit-1.9.0.jar"
+        jar="/home/lichblitz/.gradle/caches/modules-2/files-2.1/com.github.PhilJay/MPAndroidChart/v2.1.4/e075f4e80e11780d6d5262fee9fcfb859fa55864/MPAndroidChart-v2.1.4.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="a681c044244d9fc375198588297a39ba78028423">
-        <dex dex="/home/lichblitz/AndroidStudioProjects/AAOConverter/app/build/intermediates/pre-dexed/debug/retrofit-1.9.0-9a69eadd9c3495d4eae11710899e6ae15914d950.jar" />
-    </item>
-    <item
-        jar="/home/lichblitz/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
-        <dex dex="/home/lichblitz/AndroidStudioProjects/AAOConverter/app/build/intermediates/pre-dexed/debug/gson-2.3.1-52bfa2b84875045fd7f9d9db976f644e9a053d91.jar" />
+        sha1="e075f4e80e11780d6d5262fee9fcfb859fa55864">
+        <dex dex="/home/lichblitz/AndroidStudioProjects/AAOConverter/app/build/intermediates/pre-dexed/debug/MPAndroidChart-v2.1.4-adf5fe46581502df2cba93335ad87c2cb4e9bc76.jar" />
     </item>
 
 </items>

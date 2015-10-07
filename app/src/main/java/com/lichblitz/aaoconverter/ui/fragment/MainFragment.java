@@ -80,6 +80,7 @@ public class MainFragment extends Fragment implements View.OnClickListener, Call
 
     @Override
     public void success(CurrencyResponse currencyResponse, Response response) {
+        mResultAdapter.resetData();
         mResultAdapter.addAll(currencyResponse.getCurrencyResult(), mInput.getText().toString());
     }
 
