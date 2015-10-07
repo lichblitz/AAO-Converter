@@ -6,26 +6,43 @@
     android:layout_height="wrap_content"
     android:id="@+id/content_input"
     android:background="@color/content_input_color"
-    android:padding="40dp">
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp">
 
-    <EditText
-        android:numeric="integer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="20dp"
-        android:paddingRight="10dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:background="@drawable/input_shape"/>
+
+        <EditText
+            android:numeric="integer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/input_shape"
+            android:layout_marginRight="40dp"/>
+
+        <Button
+
+            android:layout_gravity="center|right"
+            android:textColor="@color/icons"
+            android:id="@+id/button_search"
+            android:text="Go!"
+            android:background="@drawable/button_shape"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
 
     <TextView
 
         android:textColor="@color/primary"
-        android:text="USD"
+        android:text="@string/currenry_usd"
+        android:textSize="13dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right|center"
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="45dp"
         android:drawableLeft="@drawable/icon_flag_usd"
         android:gravity="center"
         android:drawablePadding="5dp"/>
