@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/content_input"
+    android:background="@color/content_input_color"
+    android:padding="40dp">
+
+    <EditText
+        android:numeric="integer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/input_shape"/>
+
+    <TextView
+
+        android:textColor="@color/primary"
+        android:text="USD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center"
+        android:layout_marginRight="20dp"
+        android:drawableLeft="@drawable/icon_flag_usd"
+        android:gravity="center"
+        android:drawablePadding="5dp"/>
+
+</FrameLayout>
