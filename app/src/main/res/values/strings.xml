@@ -3,7 +3,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_main">MainActivity</string>
 
-    <string name="currenry_gbp">GBP</string>
+    <string name="currency_gbp">GBP</string>
     <string name="currenry_usd">USD</string>
     <string name="currency_eur">EUR</string>
     <string name="currency_jpy">JPY</string>
@@ -13,5 +13,7 @@
     <string name="eur">EU Euro</string>
     <string name="jpy">Japan Yen</string>
     <string name="brl">Brazil Reais</string>
+    <string name="no_text_message">Write your dollars.</string>
+    <string name="api_error_message">An error ocurred while connecting to the server. Try later.</string>
 
 </resources>

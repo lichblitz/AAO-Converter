@@ -18,16 +18,13 @@
             android:layout_gravity="top|"
             android:gravity="center"
             android:drawablePadding="5dp"
-            android:drawableLeft="@drawable/icon_flag_usd"
-            android:text="GPS"
             android:id="@+id/text_currency_initials"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <TextView
-            android:textSize="8dp"
-            android:id="@+id/text_currercy_name"
-            android:text="@string/brl"
+            android:textSize="10dp"
+            android:id="@+id/text_currency_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"/>
@@ -35,9 +32,9 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/text_currency_result"
         android:layout_gravity="center|right"
         android:textSize="20dp"
-        android:text="20000"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

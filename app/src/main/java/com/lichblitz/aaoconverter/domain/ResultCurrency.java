@@ -6,14 +6,12 @@ package com.lichblitz.aaoconverter.domain;
  * This class represents a currency from the result of the json response
  */
 public class ResultCurrency {
+
     private String name;
-    private String initials;
     private double value;
 
-
-    public ResultCurrency(String name, String initials, double value) {
+    public ResultCurrency(String name, double value) {
         this.name = name;
-        this.initials = initials;
         this.value = value;
     }
 
@@ -23,14 +21,6 @@ public class ResultCurrency {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getInitials() {
-        return initials;
-    }
-
-    public void setInitials(String initials) {
-        this.initials = initials;
     }
 
     public double getValue() {

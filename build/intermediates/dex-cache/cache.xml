@@ -2,53 +2,18 @@
 <items version="2" >
 
     <item
-        jar="/home/lichblitz/AndroidStudioProjects/AAOConverter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
+        jar="/home/lichblitz/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.9.0/a681c044244d9fc375198588297a39ba78028423/retrofit-1.9.0.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
-        <dex dex="/home/lichblitz/AndroidStudioProjects/AAOConverter/app/build/intermediates/pre-dexed/debug/classes-dbc33976fb77b2fc9e3dbdea302dc15c9e64960e.jar" />
+        sha1="a681c044244d9fc375198588297a39ba78028423">
+        <dex dex="/home/lichblitz/AndroidStudioProjects/AAOConverter/app/build/intermediates/pre-dexed/debug/retrofit-1.9.0-9a69eadd9c3495d4eae11710899e6ae15914d950.jar" />
     </item>
     <item
-        jar="/home/lichblitz/AndroidStudioProjects/AAOConverter/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/jars/classes.jar"
+        jar="/home/lichblitz/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="1821601ddbec5ff125653097812823388700af74">
-        <dex dex="/home/lichblitz/AndroidStudioProjects/AAOConverter/app/build/intermediates/pre-dexed/debug/classes-64823bd72bc0b1dcb602d62fa81f7eec8c83e66a.jar" />
-    </item>
-    <item
-        jar="/home/lichblitz/AndroidStudioProjects/AAOConverter/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="11842de6a309c447b3a3d60d73ad637a87c58994">
-        <dex dex="/home/lichblitz/AndroidStudioProjects/AAOConverter/app/build/intermediates/pre-dexed/debug/classes-a3b877ad65ca0021c545d816ccf32a1313ea9714.jar" />
-    </item>
-    <item
-        jar="/home/lichblitz/AndroidStudioProjects/AAOConverter/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="c6d79137693d494dee16372d3921f919eb724ced">
-        <dex dex="/home/lichblitz/AndroidStudioProjects/AAOConverter/app/build/intermediates/pre-dexed/debug/classes-4f1cd53cbdf49731029023faa10ba2cabb39e78b.jar" />
-    </item>
-    <item
-        jar="/home/lichblitz/AndroidStudioProjects/AAOConverter/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
-        <dex dex="/home/lichblitz/AndroidStudioProjects/AAOConverter/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-ceeb37d7d5a85950ac4ffffe14907aa24ab32bc1.jar" />
-    </item>
-    <item
-        jar="/home/lichblitz/AndroidStudioProjects/AAOConverter/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="f8efd0096475e0daf054267b61544e10dc776503">
-        <dex dex="/home/lichblitz/AndroidStudioProjects/AAOConverter/app/build/intermediates/pre-dexed/debug/classes-9388f886e56d6962522f111c5825cd714fdbd049.jar" />
-    </item>
-    <item
-        jar="/home/lichblitz/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
-        <dex dex="/home/lichblitz/AndroidStudioProjects/AAOConverter/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-9df3ade750cde1db8e1275db4e74b9634f288747.jar" />
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/home/lichblitz/AndroidStudioProjects/AAOConverter/app/build/intermediates/pre-dexed/debug/gson-2.3.1-52bfa2b84875045fd7f9d9db976f644e9a053d91.jar" />
     </item>
 
 </items>
