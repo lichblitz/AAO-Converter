@@ -10,7 +10,6 @@ import com.lichblitz.aaoconverter.domain.ResultCurrency;
 import com.lichblitz.aaoconverter.io.CurrencyResponse;
 import com.lichblitz.aaoconverter.io.FixerApiAdapter;
 import com.lichblitz.aaoconverter.io.FixerApiService;
-import com.lichblitz.aaoconverter.io.JsonKeys;
 import com.lichblitz.aaoconverter.ui.adapter.ResultAdapter;
 import com.lichblitz.aaoconverter.ui.fragment.MainFragment;
 
@@ -22,23 +21,23 @@ import org.mockito.Captor;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
-import org.robolectric.Robolectric;
 import org.robolectric.RobolectricGradleTestRunner;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowToast;
 import org.robolectric.shadows.support.v4.SupportFragmentTestUtil;
-import org.robolectric.util.ActivityController;
-
-/**
- * Created by lichblitz on 8/10/15.
- */
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
 import retrofit.Callback;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+
+/**
+ * Created by lichblitz on 8/10/15.
+ */
 
 @RunWith(RobolectricGradleTestRunner.class)
 @Config(constants = BuildConfig.class,manifest = "src/main/AndroidManifest.xml", sdk = 21)
