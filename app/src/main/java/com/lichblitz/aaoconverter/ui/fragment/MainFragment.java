@@ -1,7 +1,5 @@
 package com.lichblitz.aaoconverter.ui.fragment;
 
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -20,7 +18,7 @@ import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.utils.ColorTemplate;
 import com.lichblitz.aaoconverter.R;
-import com.lichblitz.aaoconverter.domain.ResultCurrency;
+import com.lichblitz.aaoconverter.io.ApiConstants;
 import com.lichblitz.aaoconverter.io.CurrencyResponse;
 import com.lichblitz.aaoconverter.io.FixerApiAdapter;
 import com.lichblitz.aaoconverter.io.JsonKeys;
@@ -91,7 +89,8 @@ public class MainFragment extends Fragment implements View.OnClickListener, Call
             Toast.makeText(getActivity(), getString(R.string.no_text_message), Toast.LENGTH_SHORT).show();
             mInput.requestFocus();
         }else{
-            FixerApiAdapter.getApiService().getBaseCurrency(getString(R.string.currenry_usd), this);
+            //call to the api
+            FixerApiAdapter.getApiService().getBaseCurrency(ApiConstants.VALUE_USD, this);
         }
     }
 
@@ -119,10 +118,10 @@ public class MainFragment extends Fragment implements View.OnClickListener, Call
         float input = Float.valueOf(mInput.getText().toString());
 
         ArrayList<BarEntry>  data = new ArrayList<>();
-        data.add(new BarEntry(Float.valueOf(currencyResult.get(JsonKeys.BRL)), 0));
-        data.add(new BarEntry(Float.valueOf(currencyResult.get(JsonKeys.EUR)),1));
-        data.add(new BarEntry(Float.valueOf(currencyResult.get(JsonKeys.GBP)), 2));
-        data.add(new BarEntry(Float.valueOf(currencyResult.get(JsonKeys.JPY)),3));
+        data.add(new BarEntry(Float.valueOf(currencyResult.get(JsonKeys.BRL))*input, 0));
+        data.add(new BarEntry(Float.valueOf(currencyResult.get(JsonKeys.EUR))*input,1));
+        data.add(new BarEntry(Float.valueOf(currencyResult.get(JsonKeys.GBP))*input, 2));
+        data.add(new BarEntry(Float.valueOf(currencyResult.get(JsonKeys.JPY)) * input, 3));
 
         BarDataSet barDataSet = new BarDataSet(data,getString(R.string.chart_data_label));
         barDataSet.setColors(ColorTemplate.COLORFUL_COLORS);
@@ -130,14 +129,14 @@ public class MainFragment extends Fragment implements View.OnClickListener, Call
         ArrayList<String> labels = new ArrayList<>();
         labels.add(JsonKeys.BRL);
         labels.add(JsonKeys.EUR);
-        labels.add(JsonKeys.BRL);
         labels.add(JsonKeys.GBP);
+        labels.add(JsonKeys.JPY);
 
 
         BarData barData = new BarData(labels, barDataSet);
         mBarChart.setData(barData);
-        mBarChart.setDescription(getString(R.string.char_description));
-        mBarChart.setDescriptionPosition(0,0);
+        mBarChart.setDescription("");
+        mBarChart.setDescriptionPosition(0, 0);
         mBarChart.animateY(4000);
         mBarChart.notifyDataSetChanged();
         mBarChart.setVisibility(View.VISIBLE);
