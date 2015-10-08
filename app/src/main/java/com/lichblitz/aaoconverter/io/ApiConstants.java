@@ -3,7 +3,7 @@ package com.lichblitz.aaoconverter.io;
 /**
  * Created by lichblitz on 6/10/15.
  *
- * Contains the constans of the fixer.io Api.
+ * Contains the constants of the fixer.io Api.
  */
 public class ApiConstants {
 
