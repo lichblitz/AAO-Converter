@@ -22,4 +22,7 @@ public class FixerApiAdapter {
         return API_SERVICE;
     }
 
+    public static void setApiService(FixerApiService apiService) {
+        API_SERVICE = apiService;
+    }
 }

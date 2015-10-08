@@ -142,4 +142,9 @@ public class MainFragment extends Fragment implements View.OnClickListener, Call
         mBarChart.setVisibility(View.VISIBLE);
 
     }
+
+
+    public ResultAdapter getmResultAdapter() {
+        return mResultAdapter;
+    }
 }

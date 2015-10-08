@@ -70,4 +70,12 @@ public class ResultAdapter extends RecyclerView.Adapter<ResultViewHolder>{
         currencyList.clear();
         notifyDataSetChanged();
     }
+
+    /**
+     * Gets the list of currency in the adapter.
+     * @return
+     */
+    public ArrayList<ResultCurrency> getCurrencyList() {
+        return currencyList;
+    }
 }

@@ -17,4 +17,8 @@ public class CurrencyResponse {
     public HashMap<String, String> getCurrencyResult() {
         return currencyResult;
     }
+
+    public void setCurrencyResult(HashMap<String, String> currencyResult) {
+        this.currencyResult = currencyResult;
+    }
 }
